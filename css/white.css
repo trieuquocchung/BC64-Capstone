@@ -37,3 +37,20 @@ body {
 .questions {
   padding-top: 100px;
 }
+
+.questions__bottom {
+  display: flex;
+}
+
+.questions__left{
+  width: 50%;
+}
+
+.questions__right {
+  width: 50%;
+}
+
+.questions__left img {
+  width: 100%;
+  height: auto;
+}
