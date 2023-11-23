@@ -615,6 +615,10 @@ body {
 }
 
 /* FEATURRED  */
+.featured {
+  padding-top: 80px;
+}
+
 .featured__project .nav {
   justify-content: center;
 }
