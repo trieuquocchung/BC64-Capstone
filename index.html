@@ -30,19 +30,222 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- CSS  -->
     <link rel="stylesheet" href="./css/white.css" />
   </head>
   <body>
-    <!-- HEADER  -->
-    <header class="header"></header>
-    <!-- CAROUSEL  -->
-    <section class="Carousel"></section>
-    <!-- BUSINESS  -->
-    <section class="business"></section>
-    <!-- ABOUT  -->
-    <section class="about"></section>
-    <!-- QUESTIONS  -->
+    <header class="header fixed-top">
+      <div class="container">
+        <div class="header__logo">
+          <a href="">
+            <p><i class="fa fa-handshake"></i> Masterwork</p>
+          </a>
+        </div>
+        <div class="header__contain">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand active" href="#">Home</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >About <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item nav-item4 dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <i class="fa fa-angle-down"></i>
+                  <div class="dropdown-menu">
+                    <div class="dropdown__inner">
+                      <a class="dropdown-item" href="#">Blog Posts</a>
+                    </div>
+                    <div class="dropdown__inner">
+                      <a class="dropdown-item" href="#">Landing page</a>
+                    </div>
+                    <div class="dropdown__inner">
+                      <a class="dropdown-item" href="#">404 page</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__search mr-lg-3">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </div>
+          <button type="button" class="btn btn-primary">SCHEDULE A DEMO</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="Carousel">
+      <div class="container">
+        <div class="Carousel__left">
+          <div class="heading">
+            <h1>We Execute Our Ideas From Start to Finish</h1>
+            <p class="mt-3 mb-lg-5 mb-4">
+              Building a beautiful interactive business for startups and
+              innovative companies.
+            </p>
+          </div>
+          <button type="button" class="btn btn-primary">GET STARTER</button>
+        </div>
+
+        <div class="Carousel__right">
+          <img src="./img/main.png" alt="carousel" />
+        </div>
+      </div>
+    </section>
+    <section class="business">
+      <div class="container">
+        <div class="heading">
+          <h3>WHY CHOOSE US</h3>
+          <h1>Tools for business startup to <br />professional</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="business__content">
+          <div class="row">
+            <div class="business__item col-4 mt-5">
+              <div class="business__inner text-center">
+                <a href="#" class="text-decoration-none">
+                  <img src="./img/s1.png" alt="icon1" />
+                  <h1 class="my-3">Interactive</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="business__item col-4 mt-5">
+              <div class="business__inner text-center">
+                <a href="#" class="text-decoration-none">
+                  <img src="./img/s2.png" alt="icon2" />
+                  <h1 class="my-3">Business</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="business__item col-4 mt-5">
+              <div class="business__inner text-center">
+                <a href="#" class="text-decoration-none">
+                  <img src="./img/s3.png" alt="icon3" />
+                  <h1 class="my-3">Inspiration</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium tempora rerum perspiciatis?
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container py-lg-3 mt-3">
+        <div class="about__content">
+          <div class="about__left">
+            <div class="heading text-left">
+              <h3>ABOUT OUR COMPANY</h3>
+              <h1>The Best Choice For Your Successful Business!</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+                repellendus <br />illum harum quam nihil totam reprehenderit! Ut
+                sed eveniet quos! <br />Asperiores officia, repudiandae
+                similique reiciendis, ab est magnam esse <br />nesciunt ea fuga
+                facere voluptatem.
+              </p>
+            </div>
+            <button type="button" class="btn btn-primary">READ MORE</button>
+          </div>
+          <div class="about__right">
+            <img src="./img/about.jpg" alt="about-img" />
+          </div>
+        </div>
+        <div class="about__number">
+          <div class="row">
+            <div class="col-4">
+              <div class="about__inner">
+                <h1>Happy Customers</h1>
+                <span class="counter">10458</span>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere atque sed.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="about__inner">
+                <h1>Winning Awards</h1>
+                <span class="counter">890</span>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere atque sed.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="about__inner">
+                <h1>Completed Projects</h1>
+                <span class="counter">5345</span>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere atque sed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <h1>
+            We are true to ourselves, and commit to always perform at our best.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem
+            ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores
+            amet voluptatum illo consequatur placeat fugit ducimus.
+          </p>
+          <button type="button" class="btn btn-light">READ MORE</button>
+        </div>
+      </div>
+    </section>
     <section class="questions">
       <div class="container">
         <div class="questions__top">
@@ -395,6 +598,7 @@
     </section>
     <!-- FOOTER  -->
     <footer class="footer"></footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -412,5 +616,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Countup -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
   </body>
 </html>
