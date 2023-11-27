@@ -43,8 +43,8 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="./css/white.css" />
   </head>
-  <body>
-    <header class="header fixed-top">
+  <body id="myBody">
+    <header id="global-nav" class="header fixed-top">
       <div class="container">
         <div class="header__logo">
           <a href="">
@@ -74,7 +74,7 @@
                   >
                     Pages
                   </a>
-                  <i class="fa fa-angle-down"></i>
+                  <i class="arrow fa fa-angle-down"></i>
                   <div class="dropdown-menu">
                     <div class="dropdown__inner">
                       <a class="dropdown-item" href="#">Blog Posts</a>
@@ -93,10 +93,20 @@
               </ul>
             </div>
           </nav>
-          <div class="header__search mr-lg-3">
-            <a href="#"><i class="fa fa-search"></i></a>
+          <div class="header__search">
+            <div class="header__searchInner mr-lg-3">
+              <a><i class="fa fa-search"></i></a>
+            </div>
           </div>
-          <button type="button" class="btn btn-primary">SCHEDULE A DEMO</button>
+          <button type="button" class="btn btn-primary mr-lg-3">
+            SCHEDULE A DEMO
+          </button>
+          <div class="theme__change">
+            <div class="btn1" id="switchButton" title="Click to switch theme">
+              <i class="fa fa-moon"></i>
+              <i class="fa fa-sun"></i>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -119,6 +129,7 @@
         </div>
       </div>
     </section>
+
     <section class="business">
       <div class="container">
         <div class="heading">
@@ -172,24 +183,25 @@
         </div>
       </div>
     </section>
+
     <section class="about">
       <div class="container py-lg-3 mt-3">
         <div class="about__content">
-          <div class="about__left">
+          <div class="about__left pr-md-5">
             <div class="heading text-left">
               <h3>ABOUT OUR COMPANY</h3>
               <h1>The Best Choice For Your Successful Business!</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
-                repellendus <br />illum harum quam nihil totam reprehenderit! Ut
-                sed eveniet quos! <br />Asperiores officia, repudiandae
-                similique reiciendis, ab est magnam esse <br />nesciunt ea fuga
-                facere voluptatem.
+                repellendus illum harum quam nihil totam reprehenderit! Ut sed
+                eveniet quos! Asperiores officia, repudiandae similique
+                reiciendis, ab est magnam esse nesciunt ea fuga facere
+                voluptatem.
               </p>
             </div>
             <button type="button" class="btn btn-primary">READ MORE</button>
           </div>
-          <div class="about__right">
+          <div class="about__right pl-md-5">
             <img src="./img/about.jpg" alt="about-img" />
           </div>
         </div>
@@ -198,7 +210,7 @@
             <div class="col-4">
               <div class="about__inner">
                 <h1>Happy Customers</h1>
-                <span class="counter">10458</span>
+                <span class="Counter">10458</span>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facere atque sed.
@@ -208,7 +220,7 @@
             <div class="col-4">
               <div class="about__inner">
                 <h1>Winning Awards</h1>
-                <span class="counter">890</span>
+                <span class="Counter">890</span>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facere atque sed.
@@ -218,7 +230,7 @@
             <div class="col-4">
               <div class="about__inner">
                 <h1>Completed Projects</h1>
-                <span class="counter">5345</span>
+                <span class="Counter">5345</span>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facere atque sed.
@@ -246,6 +258,7 @@
         </div>
       </div>
     </section>
+
     <section class="questions">
       <div class="container">
         <div class="questions__top">
@@ -599,6 +612,11 @@
     <!-- FOOTER  -->
     <footer class="footer"></footer>
 
+    <!-- BACK TO TOP -->
+    <a href="#" class="cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -623,9 +641,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/jquery.countup.min.js"></script>
+    <script src="./js/countUp/jquery.countup.min.js"></script>
     <script>
-      $(".counter").countUp();
+      $(".Counter").countUp();
+    </script>
+
+    <!-- BACKTOTOP -->
+    <script src="./js/backtoTop/main.js"></script>
+    <script src="./js/backtoTop/util.js"></script>
+
+    <!-- CHANGE NAVBAR SIZE WHEN SCROLL -->
+    <script>
+      $(document).ready(function () {
+        var scrollTop = 0;
+        $(window).scroll(function () {
+          scrollTop = $(window).scrollTop();
+          $(".counter").html(scrollTop);
+
+          if (scrollTop >= 100) {
+            $("#global-nav").addClass("scrolled-nav");
+          } else if (scrollTop < 100) {
+            $("#global-nav").removeClass("scrolled-nav");
+          }
+        });
+      });
+    </script>
+
+    <!-- DARK THEME CHANGE -->
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
     </script>
   </body>
 </html>
