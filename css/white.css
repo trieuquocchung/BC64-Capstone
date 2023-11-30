@@ -871,6 +871,10 @@ div#small-dialog iframe {
 }
 
 /* FEATURRED  */
+.featured {
+  padding: 100px 0;
+}
+
 .featured__project .nav {
   justify-content: center;
 }
@@ -959,7 +963,7 @@ div#small-dialog iframe {
   border: 1px solid #dd5577;
   color: #dd5577;
   background-color: white;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
   display: inline-block;
 }
 
@@ -992,6 +996,153 @@ div#small-dialog iframe {
 }
 
 /* CLIENTS  */
+
+.clients {
+  padding-top: 100px;
+}
+
+.clients__bg {
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
+    url("../img/b2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clients .container {
+  padding: 5rem 0;
+}
+
+.clients__feedback {
+  margin-top: 70px;
+}
+
+.clients__feedback .clients__img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #dc4f72;
+}
+
+.clients__feedback .clients__img img {
+  width: 110%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.clients__feedback .clients__item {
+  position: relative;
+  height: 240px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.clients__feedback .clients__text {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  padding: 2rem;
+}
+
+.clients__feedback .clients__text i {
+  position: absolute;
+  font-size: 3.5rem;
+  color: #d5d6d7;
+  top: -8px;
+  left: -35px;
+  padding: 2rem;
+}
+
+.clients__feedback .clients__text p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #2c3038;
+}
+
+.clients__feedback .clients__text h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #dc4f72;
+  margin-top: 25px;
+}
+
+.clients__feedback .clients__text h5 {
+  font-size: 1.3rem;
+  color: #5a5a5a;
+}
+
+.clients__feedback .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot span {
+  width: 35px;
+  height: 5px;
+  border-radius: 0;
+}
+
+.clients__feedback .owl-theme .owl-dots.active .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #dc4f72;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #dc4f72;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button:focus {
+  outline: none;
+}
+
+/* BUILD  */
+.build {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.build .container button {
+  margin: 30px 10px 0;
+}
+
+.build .container .btn1 {
+  padding: 15px 28px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #dd5577;
+  color: #dd5577;
+  background-color: white;
+  transition: all 0.3s linear;
+  display: inline-block;
+}
+
+.build .container .btn1:hover {
+  background-color: #dc4f72;
+  color: white;
+}
+
+.build .container .btn2 {
+  padding: 15px 28px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #dd5577;
+  color: white;
+  background-color: #dc4f72;
+  transition: all 0.1s linear;
+  display: inline-block;
+}
+
+.build .btn-danger.focus,
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.3rem rgba(225, 85, 119, 0.5);
+  outline: none;
+}
+
+/* FOOTER  */
 
 /* BACKTOTOP START  */
 
