@@ -49,20 +49,33 @@
   <body id="myBody">
     <header id="global-nav" class="header fixed-top">
       <div class="container">
-        <div class="header__logo">
-          <a href="">
-            <p><i class="fa fa-handshake"></i> Masterwork</p>
-          </a>
-        </div>
         <div class="header__contain">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand active" href="#">Home</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+          <nav class="navbar navbar-expand-lg px-0">
+            <div class="header__logo">
+              <a href="">
+                <p><i class="fa fa-handshake"></i> Masterwork</p>
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    >About <span class="sr-only">(current)</span></a
+                  <a class="nav-link active" href="#"
+                    >Home <span class="sr-only">(current)</span></a
                   >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Service</a>
@@ -94,52 +107,52 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
-            </div>
-          </nav>
-          <div class="header__search">
-            <div class="header__searchInner mr-lg-3">
-              <a
-                href="#small-dialog"
-                class="open-popup-link popup-with-zoom-anim"
-                ><i class="fa fa-search"></i
-              ></a>
-            </div>
-            <div id="small-dialog" class="popup zoom-anim-dialog mfp-hide">
-              <div class="popup__inner">
-                <div class="form-group search1">
-                  <label for=""></label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="form-control"
-                    placeholder="Enter Keyword"
-                    aria-describedby="helpId"
-                    data-content="Vui lòng điền vào trường này"
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-container="body"
-                    data-toggle="popover"
-                    data-placement="bottom"
-                    data-content="Vui lòng điền vào trường này"
-                  >
-                    Search
-                  </button>
+              <div class="header__search">
+                <div class="header__searchInner mr-lg-3">
+                  <a
+                    href="#small-dialog"
+                    class="open-popup-link popup-with-zoom-anim"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </div>
+                <div id="small-dialog" class="popup zoom-anim-dialog mfp-hide">
+                  <div class="popup__inner">
+                    <div class="form-group search1">
+                      <label for=""></label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Enter Keyword"
+                        aria-describedby="helpId"
+                        data-content="Vui lòng điền vào trường này"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-container="body"
+                        data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="Vui lòng điền vào trường này"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <button type="button" class="btn btn-primary mr-lg-3">
+                SCHEDULE A DEMO
+              </button>
             </div>
-          </div>
-          <button type="button" class="btn btn-primary mr-lg-3">
-            SCHEDULE A DEMO
-          </button>
-          <div class="theme__change">
-            <div class="btn1" id="switchButton" title="Click to switch theme">
-              <i class="fa fa-moon"></i>
-              <i class="fa fa-sun"></i>
+            <div class="theme__change mobile-position">
+              <div class="btn1" id="switchButton" title="Click to switch theme">
+                <i class="fa fa-moon"></i>
+                <i class="fa fa-sun"></i>
+              </div>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
