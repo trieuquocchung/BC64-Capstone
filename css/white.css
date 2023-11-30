@@ -159,9 +159,55 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .header {
+    background: #fff;
+    height: auto;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease 0s;
+    padding: 20px 0;
+  }
+
+  .header.scrolled-nav {
+    background: #fff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+    animation: none;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  }
+
   .navbar-nav {
     text-align: center;
-    /* width: 100%; */
+  }
+  .navbar-collapse.show {
+    background: #fff;
+  }
+  .navbar-collapse ul {
+    padding: 20px 0;
+  }
+  .navbar-collapse ul li {
+    margin: auto;
+    padding: 8px 0;
+  }
+  .navbar-collapseul li a {
+    padding: 8px 0;
+    text-align: center;
+  }
+  .header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__search .header__searchInner {
+    margin-bottom: 10px;
+  }
+  .header__btn {
+    position: relative;
+    height: 55px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -367,11 +413,7 @@ div#small-dialog iframe {
   .mobile-position {
     position: absolute;
     right: 60px;
-  }
-  .btn1 {
-    position: absolute;
-    right: 0px;
-    transform: translateY(-12px);
+    top: 15px;
   }
 }
 
@@ -997,6 +1039,59 @@ div#small-dialog iframe {
 .dark .navbar-collapse ul li a,
 .dark .navbar-brand {
   position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .dark .header {
+    background: #131617;
+    height: auto;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease 0s;
+    padding: 20px 0;
+  }
+
+  .dark .header.scrolled-nav {
+    background: #131617;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+    animation: none;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  }
+
+  /* .dark .navbar-nav {
+    text-align: center;
+  } */
+  .dark .navbar-collapse.show {
+    background: #131617;
+  }
+  /* .dark .navbar-collapse ul {
+    padding: 20px 0;
+  } */
+  /* .navbar-collapse ul li {
+    margin: auto;
+    padding: 8px 0;
+  } */
+  /* .navbar-collapseul li a {
+    padding: 8px 0;
+    text-align: center;
+  } */
+  /* .header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .header__search .header__searchInner {
+    margin-bottom: 10px;
+  } */
+  /* .header__btn {
+    position: relative;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+  } */
 }
 
 .dark .dropdown-menu {
