@@ -513,7 +513,7 @@ div#small-dialog iframe {
 
 @media screen and (max-width: 992px) {
   .Carousel {
-    height: 900px;
+    height: 800px;
     margin-top: 90px;
   }
 }
@@ -530,6 +530,19 @@ div#small-dialog iframe {
   text-align: left;
   font-size: 50px;
   line-height: 57.5px;
+}
+
+@media screen and (max-width: 375px) {
+  .Carousel__left h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .Carousel__left h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 .Carousel__left .heading p {
@@ -555,6 +568,13 @@ div#small-dialog iframe {
 .Carousel__left .btn:hover {
   color: #fff;
   background: #dc4f72;
+}
+
+@media screen and (max-width: 568px) {
+  .Carousel__left .btn {
+    line-height: 44px;
+    padding: 0 20px;
+  }
 }
 
 /* CAROUSEL END */
@@ -593,12 +613,18 @@ div#small-dialog iframe {
   font-weight: 700;
 }
 
-.business__inner p {
-  text-decoration: none;
-  color: #5a5a5a;
-  font-size: 1.6rem;
-  line-height: 24.5px;
-  margin-top: 15px;
+@media screen and (max-width: 667px) {
+  .business__inner p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .business__inner p {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 /* BUSINESS END */
@@ -739,7 +765,7 @@ div#small-dialog iframe {
 }
 
 .content__inner {
-  width: 550px;
+  max-width: 550px;
 }
 
 .content__inner h1 {
@@ -749,11 +775,24 @@ div#small-dialog iframe {
   font-weight: 700;
 }
 
+@media screen and (max-width: 440px) {
+  .content__inner h1 {
+    font-size: 26px;
+  }
+}
+
 .content__inner p {
   font-size: 16px;
   line-height: 24.5px;
   color: #eee;
   margin: 25px 0 50px 0;
+}
+
+@media screen and (max-width: 447px) {
+  .content__inner p {
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
 
 .content__inner .btn {
@@ -764,6 +803,18 @@ div#small-dialog iframe {
   padding: 0 30px;
   border-radius: 6px;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 384px) {
+  .content__inner .btn {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .content__inner .btn {
+    margin-top: 30px;
+  }
 }
 
 /* CONTENT END */
