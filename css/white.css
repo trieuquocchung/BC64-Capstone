@@ -1373,7 +1373,7 @@ div#small-dialog iframe {
 }
 
 @media screen and (max-width: 1200px) {
-  .clients__feedback .clients__text h4{
+  .clients__feedback .clients__text h4 {
     margin-top: 20px;
   }
   .clients__feedback .clients__text i {
@@ -1617,7 +1617,7 @@ div#small-dialog iframe {
     line-height: 15px;
   }
   .footer .footer__item {
-    padding: 12px;
+    padding: 5px;
   }
   .footer .footer__item .footer__form {
     padding: 2.5rem;
@@ -1626,10 +1626,15 @@ div#small-dialog iframe {
     font-size: 1.5rem;
   }
   .footer .footer__item .form-group button {
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-left: 0;
   }
   .footer__bottom .footer__icon i {
     margin-top: 10px;
+  }
+  .footer .footer__item .form-group {
+    display: inline-block;
   }
 }
 
@@ -1648,7 +1653,7 @@ div#small-dialog iframe {
     font-size: 1.4rem;
   }
   .footer .footer__item .footer__form {
-    padding: 2rem
+    padding: 2rem;
   }
 }
 
