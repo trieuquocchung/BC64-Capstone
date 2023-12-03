@@ -1009,6 +1009,7 @@ div#small-dialog iframe {
   }
   .questions__text {
     font-size: 1.5rem;
+    padding-right: 40px;
   }
   .questions__bottom .questions__right i {
     right: 20px;
@@ -1020,6 +1021,14 @@ div#small-dialog iframe {
     padding: 0.6rem;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .questions__text {
+    font-size: 1.8rem;
+    padding-right: 50px;
+  }
+}
+
 /* FEATURRED  */
 .featured {
   padding: 100px 0;
@@ -1198,6 +1207,13 @@ div#small-dialog iframe {
     padding: 12px 12px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .featured__project .nav-tabs button {
+    font-size: 1.9rem;
+    width: 170px;
+  }
+}
 /* CLIENTS  */
 
 .clients__bg {
@@ -1341,6 +1357,30 @@ div#small-dialog iframe {
   }
   .clients__feedback .clients__text p {
     font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .clients__feedback .clients__text h4 {
+    margin-top: 10px;
+  }
+  .clients__feedback .clients__text i {
+    font-size: 3.3rem;
+  }
+  .clients__feedback .clients__text p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients__feedback .clients__text h4{
+    margin-top: 20px;
+  }
+  .clients__feedback .clients__text i {
+    font-size: 3.4rem;
+  }
+  .clients__feedback .clients__text p {
+    font-size: 1.5rem;
   }
 }
 /* BUILD  */
@@ -1592,6 +1632,26 @@ div#small-dialog iframe {
     margin-top: 10px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .footer__item {
+    padding: 0 25px;
+  }
+  .footer .footer__item .form-group button {
+    padding: 0 15px;
+  }
+  .footer .footer__item .form-group input {
+    font-size: 1.2rem;
+    padding-left: 7px;
+  }
+  .footer .footer__item .footer__form p {
+    font-size: 1.4rem;
+  }
+  .footer .footer__item .footer__form {
+    padding: 2rem
+  }
+}
+
 /* ----------------BACKTOTOP START--------------  */
 
 .cd-top {
